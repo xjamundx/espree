@@ -4750,8 +4750,7 @@ function parseExportNamedDeclaration() {
             case "let":
             case "const":
             case "var":
-            // TODO: enable this case when Class gets implemented
-            // case "class":
+            case "class":
             case "function":
                 declaration = parseSourceElement();
                 return markerApply(marker, astNodeFactory.createExportNamedDeclaration(declaration, specifiers, null));
@@ -4799,8 +4798,7 @@ function parseExportDefaultDeclaration() {
     // export default ...
     expectKeyword("export");
     expectKeyword("default");
-    // TODO: or matchKeyword("class") after implementing classes
-    if (matchKeyword("function")) {
+    if (matchKeyword("function") || matchKeyword("class")) {
         possibleIdentifierToken = lookahead2();
         if (isIdentifierName(possibleIdentifierToken)) {
             // covers:
@@ -4816,13 +4814,11 @@ function parseExportDefaultDeclaration() {
           // TODO: change this to declaration once we get FunctionDeclaration with nullable name
           declaration = parseFunctionExpression();
           return markerApply(marker, astNodeFactory.createExportDefaultDeclaration(declaration));
+        } else if (lookahead.value === "class") {
+             // TODO: change this to declaration once we get ClassDeclaration with nullable name
+             parseClassExpression();
+             return markerApply(marker, astNodeFactory.createExportDefaultDeclaration(declaration));
         }
-        // TODO: enable after implementing classes
-        // else if (lookahead.value === "class") {
-        //     // TODO: change this to declaration once we get ClassDeclaration with nullable name
-        //     parseClassExpression()
-        //     return markerApply(marker, astNodeFactory.createExportDefaultDeclaration(declaration));
-        // }
     }
 
     if (matchContextualKeyword("from")) {
@@ -5395,6 +5391,7 @@ function parse(code, options) {
         if (options.sourceType === "module") {
             // TODO: enable all other ES6 features that are supported in modules
             extra.ecmaFeatures.blockBindings = true;
+            extra.ecmaFeatures.classes = true;
             extra.ecmaFeatures.regexUFlag = true;
             extra.ecmaFeatures.regexYFlag = true;
             extra.ecmaFeatures.templateStrings = true;
@@ -5409,7 +5406,6 @@ function parse(code, options) {
             extra.ecmaFeatures.objectLiteralDuplicateProperties = true;
             extra.ecmaFeatures.generators = true;
             extra.isModule = true;
-            // TODO: enable classes when it becomes available
         }
     }
 

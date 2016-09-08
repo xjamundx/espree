@@ -340,6 +340,7 @@ acorn.plugins.espree = function(instance) {
 
             var prop = this.startNode(),
                 isGenerator,
+                isAsync,
                 startPos,
                 startLoc;
 
@@ -369,8 +370,13 @@ acorn.plugins.espree = function(instance) {
                 }
             }
 
+            if (this.options.ecmaVersion >= 8) {
+                // TODO: get this to work
+                // isAsync = this.eat(tt.async)
+            }
+
             this.parsePropertyName(prop);
-            this.parsePropertyValue(prop, isPattern, isGenerator, startPos, startLoc, refShorthandDefaultPos);
+            this.parsePropertyValue(prop, isPattern, isGenerator, isAsync, startPos, startLoc, refShorthandDefaultPos);
             this.checkPropClash(prop, propHash);
             node.properties.push(this.finishNode(prop, "Property"));
         }

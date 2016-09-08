@@ -1,0 +1,3 @@
+{
+  horse: async function {}
+}

@@ -371,8 +371,18 @@ acorn.plugins.espree = function(instance) {
             }
 
             if (this.options.ecmaVersion >= 8) {
-                // TODO: get this to work
-                // isAsync = this.eat(tt.async)
+                // TODO: cleanup, this is copied directly from acorn
+                if (!isPattern &&
+                    !isGenerator &&
+                    !prop.computed &&
+                    prop.key.type === "Identifier" &&
+                    prop.key.name === "async" &&
+                    this.type !== tt.parenL &&
+                    !this.canInsertSemicolon()
+                ) {
+                    isAsync = true;
+                    this.parsePropertyName(prop/* , refDestructuringErrors*/);
+                }
             }
 
             this.parsePropertyName(prop);

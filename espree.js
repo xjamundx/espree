@@ -506,12 +506,13 @@ function tokenize(code, options) {
             case 5:
             case 6:
             case 7:
+            case 8:
                 acornOptions.ecmaVersion = options.ecmaVersion;
                 extra.ecmaVersion = options.ecmaVersion;
                 break;
 
             default:
-                throw new Error("ecmaVersion must be 3, 5, 6, or 7.");
+                throw new Error("ecmaVersion must be 3, 5, 6, 7, or 8.");
         }
     }
 
@@ -643,12 +644,13 @@ function parse(code, options) {
                 case 5:
                 case 6:
                 case 7:
+                case 8:
                     acornOptions.ecmaVersion = options.ecmaVersion;
                     extra.ecmaVersion = options.ecmaVersion;
                     break;
 
                 default:
-                    throw new Error("ecmaVersion must be 3, 5, 6, or 7.");
+                    throw new Error("ecmaVersion must be 3, 5, 6, 7, or 8.");
             }
         }
 

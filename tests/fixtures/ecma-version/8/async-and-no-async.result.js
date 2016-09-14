@@ -8,8 +8,8 @@ module.exports = {
             "column": 0
         },
         "end": {
-            "line": 1,
-            "column": 24
+            "line": 2,
+            "column": 18
         }
     },
     "range": [
@@ -18,9 +18,9 @@ module.exports = {
     ],
     "body": [
         {
-            "type": "FunctionDeclaration",
+            "type": "ExpressionStatement",
             "start": 0,
-            "end": 23,
+            "end": 5,
             "loc": {
                 "start": {
                     "line": 1,
@@ -28,11 +28,50 @@ module.exports = {
                 },
                 "end": {
                     "line": 1,
-                    "column": 23
+                    "column": 5
                 }
             },
             "range": [
                 0,
+                5
+            ],
+            "expression": {
+                "type": "Identifier",
+                "start": 0,
+                "end": 5,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 5
+                    }
+                },
+                "range": [
+                    0,
+                    5
+                ],
+                "name": "async"
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "start": 6,
+            "end": 23,
+            "loc": {
+                "start": {
+                    "line": 2,
+                    "column": 0
+                },
+                "end": {
+                    "line": 2,
+                    "column": 17
+                }
+            },
+            "range": [
+                6,
                 23
             ],
             "id": {
@@ -41,12 +80,12 @@ module.exports = {
                 "end": 18,
                 "loc": {
                     "start": {
-                        "line": 1,
-                        "column": 15
+                        "line": 2,
+                        "column": 9
                     },
                     "end": {
-                        "line": 1,
-                        "column": 18
+                        "line": 2,
+                        "column": 12
                     }
                 },
                 "range": [
@@ -57,7 +96,7 @@ module.exports = {
             },
             "generator": false,
             "expression": false,
-            "async": true,
+            "async": false,
             "params": [],
             "body": {
                 "type": "BlockStatement",
@@ -65,12 +104,12 @@ module.exports = {
                 "end": 23,
                 "loc": {
                     "start": {
-                        "line": 1,
-                        "column": 21
+                        "line": 2,
+                        "column": 15
                     },
                     "end": {
-                        "line": 1,
-                        "column": 23
+                        "line": 2,
+                        "column": 17
                     }
                 },
                 "range": [
@@ -86,12 +125,12 @@ module.exports = {
             "end": 24,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 23
+                    "line": 2,
+                    "column": 17
                 },
                 "end": {
-                    "line": 1,
-                    "column": 24
+                    "line": 2,
+                    "column": 18
                 }
             },
             "range": [
@@ -129,12 +168,12 @@ module.exports = {
             "end": 14,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 6
+                    "line": 2,
+                    "column": 0
                 },
                 "end": {
-                    "line": 1,
-                    "column": 14
+                    "line": 2,
+                    "column": 8
                 }
             },
             "range": [
@@ -149,12 +188,12 @@ module.exports = {
             "end": 18,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 15
+                    "line": 2,
+                    "column": 9
                 },
                 "end": {
-                    "line": 1,
-                    "column": 18
+                    "line": 2,
+                    "column": 12
                 }
             },
             "range": [
@@ -169,12 +208,12 @@ module.exports = {
             "end": 19,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 18
+                    "line": 2,
+                    "column": 12
                 },
                 "end": {
-                    "line": 1,
-                    "column": 19
+                    "line": 2,
+                    "column": 13
                 }
             },
             "range": [
@@ -189,12 +228,12 @@ module.exports = {
             "end": 20,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 19
+                    "line": 2,
+                    "column": 13
                 },
                 "end": {
-                    "line": 1,
-                    "column": 20
+                    "line": 2,
+                    "column": 14
                 }
             },
             "range": [
@@ -209,12 +248,12 @@ module.exports = {
             "end": 22,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 21
+                    "line": 2,
+                    "column": 15
                 },
                 "end": {
-                    "line": 1,
-                    "column": 22
+                    "line": 2,
+                    "column": 16
                 }
             },
             "range": [
@@ -229,12 +268,12 @@ module.exports = {
             "end": 23,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 22
+                    "line": 2,
+                    "column": 16
                 },
                 "end": {
-                    "line": 1,
-                    "column": 23
+                    "line": 2,
+                    "column": 17
                 }
             },
             "range": [
@@ -249,12 +288,12 @@ module.exports = {
             "end": 24,
             "loc": {
                 "start": {
-                    "line": 1,
-                    "column": 23
+                    "line": 2,
+                    "column": 17
                 },
                 "end": {
-                    "line": 1,
-                    "column": 24
+                    "line": 2,
+                    "column": 18
                 }
             },
             "range": [

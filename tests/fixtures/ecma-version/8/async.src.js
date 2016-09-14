@@ -1,3 +1,1 @@
-async function foo() {
-  return "baz"
-}
+async function foo() {};

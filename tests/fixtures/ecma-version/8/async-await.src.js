@@ -1,3 +1,1 @@
-async function foo() {
-  await baz();
-}
+async function foo(a, b) { await a };

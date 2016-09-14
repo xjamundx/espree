@@ -1,7 +1,7 @@
 module.exports = {
     "type": "Program",
     "start": 0,
-    "end": 37,
+    "end": 36,
     "loc": {
         "start": {
             "line": 1,
@@ -9,16 +9,16 @@ module.exports = {
         },
         "end": {
             "line": 1,
-            "column": 37
+            "column": 36
         }
     },
     "range": [
         0,
-        37
+        36
     ],
     "body": [
         {
-            "type": "FunctionDeclaration",
+            "type": "ExpressionStatement",
             "start": 0,
             "end": 36,
             "loc": {
@@ -35,178 +35,158 @@ module.exports = {
                 0,
                 36
             ],
-            "id": {
-                "type": "Identifier",
-                "start": 15,
-                "end": 18,
+            "expression": {
+                "type": "FunctionExpression",
+                "start": 1,
+                "end": 34,
                 "loc": {
                     "start": {
                         "line": 1,
-                        "column": 15
+                        "column": 1
                     },
                     "end": {
                         "line": 1,
-                        "column": 18
+                        "column": 34
                     }
                 },
                 "range": [
-                    15,
-                    18
+                    1,
+                    34
                 ],
-                "name": "foo"
-            },
-            "generator": false,
-            "expression": false,
-            "async": true,
-            "params": [
-                {
+                "id": {
                     "type": "Identifier",
-                    "start": 19,
-                    "end": 20,
+                    "start": 16,
+                    "end": 19,
                     "loc": {
                         "start": {
+                            "line": 1,
+                            "column": 16
+                        },
+                        "end": {
                             "line": 1,
                             "column": 19
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 20
                         }
                     },
                     "range": [
-                        19,
-                        20
+                        16,
+                        19
                     ],
-                    "name": "a"
+                    "name": "foo"
                 },
-                {
-                    "type": "Identifier",
-                    "start": 22,
-                    "end": 23,
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 22
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 23
-                        }
-                    },
-                    "range": [
-                        22,
-                        23
-                    ],
-                    "name": "b"
-                }
-            ],
-            "body": {
-                "type": "BlockStatement",
-                "start": 25,
-                "end": 36,
-                "loc": {
-                    "start": {
-                        "line": 1,
-                        "column": 25
-                    },
-                    "end": {
-                        "line": 1,
-                        "column": 36
-                    }
-                },
-                "range": [
-                    25,
-                    36
-                ],
-                "body": [
+                "generator": false,
+                "expression": false,
+                "async": true,
+                "params": [
                     {
-                        "type": "ExpressionStatement",
-                        "start": 27,
-                        "end": 34,
+                        "type": "Identifier",
+                        "start": 20,
+                        "end": 21,
                         "loc": {
                             "start": {
                                 "line": 1,
-                                "column": 27
+                                "column": 20
                             },
                             "end": {
                                 "line": 1,
-                                "column": 34
+                                "column": 21
                             }
                         },
                         "range": [
-                            27,
-                            34
+                            20,
+                            21
                         ],
-                        "expression": {
-                            "type": "AwaitExpression",
-                            "start": 27,
-                            "end": 34,
+                        "name": "a"
+                    }
+                ],
+                "body": {
+                    "type": "BlockStatement",
+                    "start": 23,
+                    "end": 34,
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 34
+                        }
+                    },
+                    "range": [
+                        23,
+                        34
+                    ],
+                    "body": [
+                        {
+                            "type": "ExpressionStatement",
+                            "start": 25,
+                            "end": 32,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 27
+                                    "column": 25
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 34
+                                    "column": 32
                                 }
                             },
                             "range": [
-                                27,
-                                34
+                                25,
+                                32
                             ],
-                            "argument": {
-                                "type": "Identifier",
-                                "start": 33,
-                                "end": 34,
+                            "expression": {
+                                "type": "AwaitExpression",
+                                "start": 25,
+                                "end": 32,
                                 "loc": {
                                     "start": {
                                         "line": 1,
-                                        "column": 33
+                                        "column": 25
                                     },
                                     "end": {
                                         "line": 1,
-                                        "column": 34
+                                        "column": 32
                                     }
                                 },
                                 "range": [
-                                    33,
-                                    34
+                                    25,
+                                    32
                                 ],
-                                "name": "a"
+                                "argument": {
+                                    "type": "Identifier",
+                                    "start": 31,
+                                    "end": 32,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 31
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 32
+                                        }
+                                    },
+                                    "range": [
+                                        31,
+                                        32
+                                    ],
+                                    "name": "a"
+                                }
                             }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "EmptyStatement",
-            "start": 36,
-            "end": 37,
-            "loc": {
-                "start": {
-                    "line": 1,
-                    "column": 36
-                },
-                "end": {
-                    "line": 1,
-                    "column": 37
+                    ]
                 }
-            },
-            "range": [
-                36,
-                37
-            ]
+            }
         }
     ],
     "sourceType": "script",
     "tokens": [
         {
-            "type": "Identifier",
-            "value": "async",
+            "type": "Punctuator",
+            "value": "(",
             "start": 0,
-            "end": 5,
+            "end": 1,
             "loc": {
                 "start": {
                     "line": 1,
@@ -214,63 +194,63 @@ module.exports = {
                 },
                 "end": {
                     "line": 1,
-                    "column": 5
+                    "column": 1
                 }
             },
             "range": [
                 0,
-                5
+                1
+            ]
+        },
+        {
+            "type": "Identifier",
+            "value": "async",
+            "start": 1,
+            "end": 6,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 1
+                },
+                "end": {
+                    "line": 1,
+                    "column": 6
+                }
+            },
+            "range": [
+                1,
+                6
             ]
         },
         {
             "type": "Keyword",
             "value": "function",
-            "start": 6,
-            "end": 14,
+            "start": 7,
+            "end": 15,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 6
+                    "column": 7
                 },
                 "end": {
                     "line": 1,
-                    "column": 14
+                    "column": 15
                 }
             },
             "range": [
-                6,
-                14
+                7,
+                15
             ]
         },
         {
             "type": "Identifier",
             "value": "foo",
-            "start": 15,
-            "end": 18,
-            "loc": {
-                "start": {
-                    "line": 1,
-                    "column": 15
-                },
-                "end": {
-                    "line": 1,
-                    "column": 18
-                }
-            },
-            "range": [
-                15,
-                18
-            ]
-        },
-        {
-            "type": "Punctuator",
-            "value": "(",
-            "start": 18,
+            "start": 16,
             "end": 19,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 18
+                    "column": 16
                 },
                 "end": {
                     "line": 1,
@@ -278,13 +258,13 @@ module.exports = {
                 }
             },
             "range": [
-                18,
+                16,
                 19
             ]
         },
         {
-            "type": "Identifier",
-            "value": "a",
+            "type": "Punctuator",
+            "value": "(",
             "start": 19,
             "end": 20,
             "loc": {
@@ -303,8 +283,8 @@ module.exports = {
             ]
         },
         {
-            "type": "Punctuator",
-            "value": ",",
+            "type": "Identifier",
+            "value": "a",
             "start": 20,
             "end": 21,
             "loc": {
@@ -323,28 +303,28 @@ module.exports = {
             ]
         },
         {
-            "type": "Identifier",
-            "value": "b",
-            "start": 22,
-            "end": 23,
+            "type": "Punctuator",
+            "value": ")",
+            "start": 21,
+            "end": 22,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 22
+                    "column": 21
                 },
                 "end": {
                     "line": 1,
-                    "column": 23
+                    "column": 22
                 }
             },
             "range": [
-                22,
-                23
+                21,
+                22
             ]
         },
         {
             "type": "Punctuator",
-            "value": ")",
+            "value": "{",
             "start": 23,
             "end": 24,
             "loc": {
@@ -363,10 +343,10 @@ module.exports = {
             ]
         },
         {
-            "type": "Punctuator",
-            "value": "{",
+            "type": "Identifier",
+            "value": "await",
             "start": 25,
-            "end": 26,
+            "end": 30,
             "loc": {
                 "start": {
                     "line": 1,
@@ -374,23 +354,23 @@ module.exports = {
                 },
                 "end": {
                     "line": 1,
-                    "column": 26
+                    "column": 30
                 }
             },
             "range": [
                 25,
-                26
+                30
             ]
         },
         {
             "type": "Identifier",
-            "value": "await",
-            "start": 27,
+            "value": "a",
+            "start": 31,
             "end": 32,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 27
+                    "column": 31
                 },
                 "end": {
                     "line": 1,
@@ -398,13 +378,13 @@ module.exports = {
                 }
             },
             "range": [
-                27,
+                31,
                 32
             ]
         },
         {
-            "type": "Identifier",
-            "value": "a",
+            "type": "Punctuator",
+            "value": "}",
             "start": 33,
             "end": 34,
             "loc": {
@@ -424,7 +404,27 @@ module.exports = {
         },
         {
             "type": "Punctuator",
-            "value": "}",
+            "value": ")",
+            "start": 34,
+            "end": 35,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 34
+                },
+                "end": {
+                    "line": 1,
+                    "column": 35
+                }
+            },
+            "range": [
+                34,
+                35
+            ]
+        },
+        {
+            "type": "Punctuator",
+            "value": ";",
             "start": 35,
             "end": 36,
             "loc": {
@@ -440,26 +440,6 @@ module.exports = {
             "range": [
                 35,
                 36
-            ]
-        },
-        {
-            "type": "Punctuator",
-            "value": ";",
-            "start": 36,
-            "end": 37,
-            "loc": {
-                "start": {
-                    "line": 1,
-                    "column": 36
-                },
-                "end": {
-                    "line": 1,
-                    "column": 37
-                }
-            },
-            "range": [
-                36,
-                37
             ]
         }
     ]

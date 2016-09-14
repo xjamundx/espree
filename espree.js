@@ -370,22 +370,21 @@ acorn.plugins.espree = function(instance) {
                 }
             }
 
-            if (this.options.ecmaVersion >= 8) {
-                // TODO: cleanup, this is copied directly from acorn
-                if (!isPattern &&
-                    !isGenerator &&
-                    !prop.computed &&
-                    prop.key.type === "Identifier" &&
-                    prop.key.name === "async" &&
-                    this.type !== tt.parenL &&
-                    !this.canInsertSemicolon()
-                ) {
-                    isAsync = true;
-                    this.parsePropertyName(prop/* , refDestructuringErrors*/);
-                }
+            // grab the property name or "async"
+            this.parsePropertyName(prop/* , refDestructuringErrors */);
+            if (this.options.ecmaVersion >= 8 &&
+                !isPattern &&
+                !isGenerator &&
+                !prop.computed &&
+                prop.key.type === "Identifier" &&
+                prop.key.name === "async" &&
+                this.type !== tt.parenL &&
+                !this.canInsertSemicolon()
+            ) {
+                this.parsePropertyName(prop/* , refDestructuringErrors */);
+                isAsync = true;
             }
 
-            this.parsePropertyName(prop);
             this.parsePropertyValue(prop, isPattern, isGenerator, isAsync, startPos, startLoc, refShorthandDefaultPos);
             this.checkPropClash(prop, propHash);
             node.properties.push(this.finishNode(prop, "Property"));

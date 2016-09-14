@@ -1,7 +1,7 @@
 module.exports = {
     "type": "Program",
     "start": 0,
-    "end": 37,
+    "end": 47,
     "loc": {
         "start": {
             "line": 1,
@@ -9,18 +9,18 @@ module.exports = {
         },
         "end": {
             "line": 1,
-            "column": 37
+            "column": 47
         }
     },
     "range": [
         0,
-        37
+        47
     ],
     "body": [
         {
             "type": "FunctionDeclaration",
             "start": 0,
-            "end": 36,
+            "end": 46,
             "loc": {
                 "start": {
                     "line": 1,
@@ -28,12 +28,12 @@ module.exports = {
                 },
                 "end": {
                     "line": 1,
-                    "column": 36
+                    "column": 46
                 }
             },
             "range": [
                 0,
-                36
+                46
             ],
             "id": {
                 "type": "Identifier",
@@ -103,7 +103,7 @@ module.exports = {
             "body": {
                 "type": "BlockStatement",
                 "start": 25,
-                "end": 36,
+                "end": 46,
                 "loc": {
                     "start": {
                         "line": 1,
@@ -111,18 +111,18 @@ module.exports = {
                     },
                     "end": {
                         "line": 1,
-                        "column": 36
+                        "column": 46
                     }
                 },
                 "range": [
                     25,
-                    36
+                    46
                 ],
                 "body": [
                     {
                         "type": "ExpressionStatement",
                         "start": 27,
-                        "end": 34,
+                        "end": 44,
                         "loc": {
                             "start": {
                                 "line": 1,
@@ -130,17 +130,17 @@ module.exports = {
                             },
                             "end": {
                                 "line": 1,
-                                "column": 34
+                                "column": 44
                             }
                         },
                         "range": [
                             27,
-                            34
+                            44
                         ],
                         "expression": {
-                            "type": "AwaitExpression",
+                            "type": "BinaryExpression",
                             "start": 27,
-                            "end": 34,
+                            "end": 44,
                             "loc": {
                                 "start": {
                                     "line": 1,
@@ -148,21 +148,21 @@ module.exports = {
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 34
+                                    "column": 44
                                 }
                             },
                             "range": [
                                 27,
-                                34
+                                44
                             ],
-                            "argument": {
-                                "type": "Identifier",
-                                "start": 33,
+                            "left": {
+                                "type": "AwaitExpression",
+                                "start": 27,
                                 "end": 34,
                                 "loc": {
                                     "start": {
                                         "line": 1,
-                                        "column": 33
+                                        "column": 27
                                     },
                                     "end": {
                                         "line": 1,
@@ -170,10 +170,69 @@ module.exports = {
                                     }
                                 },
                                 "range": [
-                                    33,
+                                    27,
                                     34
                                 ],
-                                "name": "a"
+                                "argument": {
+                                    "type": "Identifier",
+                                    "start": 33,
+                                    "end": 34,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 33
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 34
+                                        }
+                                    },
+                                    "range": [
+                                        33,
+                                        34
+                                    ],
+                                    "name": "a"
+                                }
+                            },
+                            "operator": "+",
+                            "right": {
+                                "type": "AwaitExpression",
+                                "start": 37,
+                                "end": 44,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 37
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 44
+                                    }
+                                },
+                                "range": [
+                                    37,
+                                    44
+                                ],
+                                "argument": {
+                                    "type": "Identifier",
+                                    "start": 43,
+                                    "end": 44,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 43
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 44
+                                        }
+                                    },
+                                    "range": [
+                                        43,
+                                        44
+                                    ],
+                                    "name": "b"
+                                }
                             }
                         }
                     }
@@ -182,21 +241,21 @@ module.exports = {
         },
         {
             "type": "EmptyStatement",
-            "start": 36,
-            "end": 37,
+            "start": 46,
+            "end": 47,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 36
+                    "column": 46
                 },
                 "end": {
                     "line": 1,
-                    "column": 37
+                    "column": 47
                 }
             },
             "range": [
-                36,
-                37
+                46,
+                47
             ]
         }
     ],
@@ -424,7 +483,7 @@ module.exports = {
         },
         {
             "type": "Punctuator",
-            "value": "}",
+            "value": "+",
             "start": 35,
             "end": 36,
             "loc": {
@@ -443,23 +502,83 @@ module.exports = {
             ]
         },
         {
-            "type": "Punctuator",
-            "value": ";",
-            "start": 36,
-            "end": 37,
+            "type": "Identifier",
+            "value": "await",
+            "start": 37,
+            "end": 42,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 36
+                    "column": 37
                 },
                 "end": {
                     "line": 1,
-                    "column": 37
+                    "column": 42
                 }
             },
             "range": [
-                36,
-                37
+                37,
+                42
+            ]
+        },
+        {
+            "type": "Identifier",
+            "value": "b",
+            "start": 43,
+            "end": 44,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 43
+                },
+                "end": {
+                    "line": 1,
+                    "column": 44
+                }
+            },
+            "range": [
+                43,
+                44
+            ]
+        },
+        {
+            "type": "Punctuator",
+            "value": "}",
+            "start": 45,
+            "end": 46,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 45
+                },
+                "end": {
+                    "line": 1,
+                    "column": 46
+                }
+            },
+            "range": [
+                45,
+                46
+            ]
+        },
+        {
+            "type": "Punctuator",
+            "value": ";",
+            "start": 46,
+            "end": 47,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 46
+                },
+                "end": {
+                    "line": 1,
+                    "column": 47
+                }
+            },
+            "range": [
+                46,
+                47
             ]
         }
     ]
